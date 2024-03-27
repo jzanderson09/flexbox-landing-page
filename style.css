@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+button {
+    background-color: #3882F6;
+    border: 1px solid black;
+    border-radius: 7px;
+    color: #F9FAF8;
+    padding: 2% 8%;
+}
+
+p {
+    color: #E5E7EB;
+}
+
+/* ----------------------.container---------------------- */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ----------------------header-------------------------- */
+
+.container header {
+    background-color: #1F2937;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* ----------------------header nav---------------------- */
+
+
+.container header nav {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1% 7%;
+}
+
+.container header nav .header-logo {
+    color: #F9FAF8;
+    font-size: 2.4rem;
+}
+
+.container header nav .links {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.container header nav .links .link-text {
+    color: #E5E7EB;
+    font-size: 1.6rem;
+}
+
+/* --------------------header .banner------------------- */
+
+.container header .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 7%;
+}
+
+/* --------------header .banner .left------------------- */
+
+.container header .banner .left {
+    width: 38%;
+}
+
+.container header .banner .left .main-text {
+    color: #F9FAF8;
+    font-size: 4.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.container header .banner .left .secondary-text {
+    color: #E5E7EB;
+    font-size: 1.6rem;
+    margin: 2% auto;
+    padding: 0;
+    text-wrap: wrap;
+}
+
+/* --------------header .banner .right------------------ */
+
+.container header .banner .right {
+    width: 40%;
+}
+
+.container header .banner .right .img-div {
+    background: #9399A4;
+    display: flex;
+    align-items: center;
+    height: 225px;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+}
+
+.container header .banner .right .img-div p {
+    font-size: 1.8rem;
+}
+
+/* ---------------------main---------------------------- */
+
+.container main .information-header {
+    color: #1F2937;
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+.container main .quote-container {
+    background-color: #E5E7EB;
+}
+
+.container main .quote-container .quote-text {
+    color: #1F2937;
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+/* -----------------------footer----------------------- */
+
+.container footer {
+    background-color: #1F2937;
+}
+
+/* ---------------------------------------------------- */
