@@ -24,7 +24,10 @@ button {
     border: 1px solid black;
     border-radius: 7px;
     color: #F9FAF8;
+    font-size: 1.4rem;
+    font-weight: 800;
     padding: 2% 8%;
+    width: 28%;
 }
 
 p {
@@ -56,41 +59,45 @@ p {
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 1% 7%;
+    margin: 0 9%;
 }
 
 .container header nav .header-logo {
     color: #F9FAF8;
     font-size: 2.4rem;
+    margin-left: 1%;
 }
 
 .container header nav .links {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    gap: 10px;
+    font-weight: 300;
+    gap: 22px;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
 .container header nav .links .link-text {
     color: #E5E7EB;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
-/* --------------------header .banner------------------- */
+/* --------------------header .banner-------------------- */
 
 .container header .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1% 7%;
+    margin: 6% 10% 9%;
 }
 
-/* --------------header .banner .left------------------- */
+/* --------------header .banner .left-------------------- */
 
 .container header .banner .left {
-    width: 38%;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 45%;
 }
 
 .container header .banner .left .main-text {
@@ -103,16 +110,19 @@ p {
 
 .container header .banner .left .secondary-text {
     color: #E5E7EB;
-    font-size: 1.6rem;
-    margin: 2% auto;
-    padding: 0;
+    font-size: 1.8rem;
+    margin: 0 auto 3%;
     text-wrap: wrap;
 }
 
-/* --------------header .banner .right------------------ */
+/* --------------header .banner .right------------------- */
 
 .container header .banner .right {
-    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    margin-top: 1%;
+    width: 48%;
 }
 
 .container header .banner .right .img-div {
@@ -122,35 +132,143 @@ p {
     height: 225px;
     justify-content: center;
     text-align: center;
-    width: 450px;
+    width: 50rem;
 }
 
 .container header .banner .right .img-div p {
     font-size: 1.8rem;
 }
 
-/* ---------------------main---------------------------- */
+/* ---------------------main----------------------------- */
+
+.container main {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
 
 .container main .information-header {
     color: #1F2937;
     font-size: 3.6rem;
     font-weight: 800;
+    margin: 3% auto;
 }
+
+/* --------------.card-container------------------------- */
+
+.container main .card-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.container main .card-container .card {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 14%;
+}
+
+.container main .card-container .card .img-container {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+    height: 22vh;
+    width: 93%;
+}
+
+.container main .card-container .card .img-text {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin: 4% auto auto;
+    opacity: 0.5;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+/* --------------.quote-container------------------------ */
+
 
 .container main .quote-container {
     background-color: #E5E7EB;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .container main .quote-container .quote-text {
     color: #1F2937;
     font-size: 3.6rem;
     font-weight: 300;
+    margin-bottom: 0;
+    padding: 6% 19% 0;
+    text-align: left;
 }
 
-/* -----------------------footer----------------------- */
+.container main .quote-container .quote-author {
+    color: #1F2937;
+    font-size: 2.4rem;
+    margin: 0 21% 7% 0;
+    text-align: right;
+}
+
+/* --------------.sign-up-container---------------------- */
+
+
+.container main .sign-up-container {
+    display: flex;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 5px;
+    flex-flow: row nowrap;
+    height: 25vh;
+    justify-content: center;
+    margin: 7% auto;
+    padding: 0;
+    text-align: center;
+    width: 85%;
+}
+
+.container main .sign-up-container .sign-up-left {
+    width: 47%;
+}
+
+.container main .sign-up-container .sign-up-left p {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.container main .sign-up-container .sign-up-left .request {
+    font-weight: 200;
+}
+
+.container main .sign-up-container .sign-up-right {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.container main .sign-up-container .sign-up-right .call-to-action {
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 7px;
+    color: #F9FAF8;
+    padding: 2% 8%;
+    height: 6vh;
+    width: 40%;
+}
+
+/* -----------------------footer------------------------- */
 
 .container footer {
     background-color: #1F2937;
+    font-size: 1.8rem;
+    padding: 2%;
+    text-align: center;
 }
-
-/* ---------------------------------------------------- */
